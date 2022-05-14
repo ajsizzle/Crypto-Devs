@@ -30,6 +30,7 @@ export default function Home() {
       // When used for the first time, it prompts the user to connect their wallet
       await getProviderOrSigner()
       setWalletConnected(true)
+      setLoading(false)
     } catch (error) {
       console.error(error)
     }
