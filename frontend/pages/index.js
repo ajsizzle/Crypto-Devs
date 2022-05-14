@@ -78,6 +78,7 @@ export default function Home() {
       window.alert(
         "You've successfully minted a CryptoDev! Congratulations! 🥳"
       )
+      setLoading(false)
     } catch (error) {
       console.error(error)
     }
@@ -328,8 +329,7 @@ export default function Home() {
       return (
         <div>
           <div className={styles.description}>
-            Presale has ended. You can mint a CryptoDev in the public sale while
-            supplies last!
+            Presale has ended. Public mint is live!
           </div>
           <button classname={styles.button} onClick={publicMint}>
             Public Mint 🚀
