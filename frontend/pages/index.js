@@ -231,15 +231,6 @@ export default function Home() {
     return web3Provider
   }
 
-  const onPageLoad = async () => {
-    await connectWallet()
-    await getOwner()
-    const presaleStarted = await checkIfPresaleStarted()
-    if (presaleStarted) {
-      await checkIfPresaleEnded()
-    }
-  }
-
   useEffect(() => {
     // if wallet is not connected, create a new instance of Web3Modal and connect the MetaMask wallet
     if (!walletConnected) {
