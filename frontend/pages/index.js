@@ -332,7 +332,7 @@ export default function Home() {
           <div className={styles.description}>
             Presale has ended. Public mint is live!
           </div>
-          <button classname={styles.button} onClick={publicMint}>
+          <button className={styles.button} onClick={publicMint}>
             Public Mint 🚀
           </button>
         </div>
